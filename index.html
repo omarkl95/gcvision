@@ -1,0 +1,945 @@
+
+<!DOCTYPE html>
+<html class="wide wow-animation" lang="en"> 
+  
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head>
+    <title>GC-VISION</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="static/images/favicon.ico" type="image/x-icon">
+
+    <!-- <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Roboto:100,300,400,500,600,700%7CLato%7CKalam:300,400,700"> -->
+    <link rel="stylesheet" href="static/css/bootstrap.css">
+    <link rel="stylesheet" href="static/css/fonts.css">
+    <link rel="stylesheet" href="static/css/all.min.css"/>
+    <link rel="stylesheet" href="static/css/style.css">
+    <style>.ie-panel{display: none;background: #212121;padding: 10px 0;box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);clear: both;text-align:center;position: relative;z-index: 1;} html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {display: block;}</style>
+
+    <style>
+      .preloader {
+    background-color: #f7f7f7;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999999;
+    -webkit-transition: .6s;
+    -o-transition: .6s;
+    transition: .6s;
+    margin: 0 auto;
+}
+.preloader .preloader-circle {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    border-style: solid;
+    border-width: 1px;
+    border-top-color: #ff1313;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    z-index: 10;
+    border-radius: 50%;
+    -webkit-box-shadow: 0 1px 5px 0 rgb(35 181 185 / 15%);
+    box-shadow: 0 1px 5px 0 rgb(35 181 185 / 15%);
+    background-color: #fff;
+    -webkit-animation: zoom 2000ms infinite ease;
+    animation: zoom 2000ms infinite ease;
+    -webkit-transition: .6s;
+    -o-transition: .6s;
+    transition: .6s;
+}
+.preloader .preloader-img {
+    position: absolute;
+    top: 50%;
+    z-index: 200;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+    display: inline-block;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    padding-top: 6px;
+    -webkit-transition: .6s;
+    -o-transition: .6s;
+    transition: .6s;
+}
+@keyframes zoom {
+  0% {
+    -webkit-transform: rotate(
+0deg
+);
+    transform: rotate(
+0deg
+);
+    -webkit-transition: .6s;
+    -o-transition: .6s;
+    transition: .6s;
+}
+100% {
+    -webkit-transform: rotate(
+360deg
+);
+    transform: rotate(
+360deg
+);
+    -webkit-transition: .6s;
+    -o-transition: .6s;
+    transition: .6s;
+}
+
+}
+.material-parallax::before {
+    position: absolute;
+    content: "";
+    background-color: rgba(1, 10, 28, 0.6);
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 9;
+    background-repeat: no-repeat;
+}
+.box-info-renee-title {
+  position: relative;
+  z-index:99999;
+}
+    </style>
+  </head>
+  <body> 
+
+    <div class="ie-panel"><a href="http://windows.microsoft.com/en-US/internet-explorer/">
+      <img src="static/images/ie8-panel/warning_bar_0000_us.jpg" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a>
+    </div>
+
+    <div id="preloader-active" class="preloader" style="display: block;">
+      <div class="preloader d-flex align-items-center justify-content-center">
+          <div class="preloader-inner position-relative">
+              <div class="preloader-circle"></div>
+              <div class="preloader-img pere-text">
+                  <img src="static/images/loder.png" alt="">
+              </div>
+          </div>
+      </div>
+  </div>
+
+   
+
+    <div class="page">
+      <!-- Page Header-->
+      <header class="section page-header header-creative-wrap context-dark">
+        <!-- RD Navbar-->
+        <div class="rd-navbar-wrap">
+          <nav class="rd-navbar rd-navbar-creative rd-navbar-logo-mobile" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-fixed" data-lg-device-layout="rd-navbar-fixed" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-xxl-layout="rd-navbar-static" data-xxl-device-layout="rd-navbar-static" data-lg-stick-up-offset="100px" data-xl-stick-up-offset="112px" data-xxl-stick-up-offset="132px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
+            <div class="rd-navbar-collapse-toggle rd-navbar-fixed-element-1" data-rd-navbar-toggle=".rd-navbar-collapse"><span></span></div>
+            <div class="rd-navbar-aside-outer">
+              <div class="rd-navbar-aside">
+                <div class="rd-navbar-collapse">
+                  <ul class="contacts-classic">
+                    <li><span class="contacts-classic-title"></span></li>
+                    <li>
+                      <ul class="list-inline">
+                        <li class="list-inline-item"><a class="fab fa-facebook" href="https://www.facebook.com/george.nehme.754"></a></li>
+                        <li class="list-inline-item"><a class="fab fa-instagram" href="https://www.instagram.com/leader_george/"></a></li>
+                      </ul>
+                    </li>
+                  </ul><a class="rd-navbar-basket rd-navbar-basket-mobile fl-bigmug-line-shopping202" href="cart-page.html"><span>2</span></a>
+                </div>
+                <!-- RD Navbar Panel-->
+                <div class="rd-navbar-panel">
+                  <!-- RD Navbar Toggle-->
+                  <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
+                  <!-- RD Navbar Brand-->
+                  <div class="rd-navbar-brand"><a class="brand" href="index-2.html">
+                    <!-- <img class="brand-logo-dark" src="/static/images/logo-default-220x20.png" alt="" width="220" height="20" srcset="/static/images/logo-default-439x39.png%202x"/> -->
+                    <img class="brand-logo-light" src="static/images/logo.png" alt="" width="298" height="27"
+                    /></a>
+                  </div>
+                </div>
+                <div class="rd-navbar-aside-element">
+                  <!-- RD Navbar Search-->
+
+
+                </div>
+              </div>
+            </div>
+            <div class="rd-navbar-main-outer">
+              <div class="rd-navbar-main">
+                <div class="rd-navbar-nav-wrap">
+                  <!-- RD Navbar Nav-->
+                  <ul class="rd-navbar-nav">
+                    <li class="rd-nav-item "><a class="rd-nav-link" href="#home">Home</a> </li>
+                <li class="rd-nav-item "><a class="rd-nav-link" href="#annoucers">Team</a> </li>
+                    <li class="rd-nav-item "><a class="rd-nav-link" href="#about">About</a></li>
+                    <li class="rd-nav-item "><a class="rd-nav-link" href="#gallery">Gallery</a></li>
+                      <li class="rd-nav-item "><a class="rd-nav-link" href="#today">Services</a></li>
+                    </li>
+                      <li class="rd-nav-item "><a class="rd-nav-link" href="#shows">Projects</a></li>
+                   <li class="rd-nav-item"><a class="rd-nav-link" href="#footer">Contact</a></li>
+                      <!-- RD Navbar Dropdown-->
+                      <ul class="rd-menu rd-navbar-dropdown">
+                        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="single-product.html">Single Product</a></li>
+                        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="cart-page.html">Cart Page</a></li>
+                        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="checkout.html">Checkout</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+
+      <section class="section parallax-container section-custom-1" data-parallax-img="static/images/background/bg-image-2.jpg" id="home">
+        <div class="parallax-content context-dark text-center">
+          <div class="section-md">
+            <div class="container">
+              <div class="box-info-renee-decor"></div>
+              <div class="box-info-renee-subtitle wow fadeInLeft">
+                <h1 class="box-info-renee-title wow fadeScale">Modern Interior Design</div>
+            
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+       <!-- Our Wines-->
+       <section class="section section-xxl " id="annoucers">
+        <div class="container">
+          <h2 class="wow fadeScale">OUR TEAM</h2>
+          <div class="row row-30">
+            
+        
+
+            
+            
+            <div class="col-sm-6 col-lg-4">
+              <!-- Thumbnail Classic-->
+              <article class="thumbnail-classic">
+                <div class="thumbnail-classic-figure"><img src="media/announcers/Ahmad Minezil - Chief Financial Officer.jpeg" alt="" width="370" height="315"/>
+                </div>
+                <div class="thumbnail-classic-caption">
+                  <div>
+                    <h5 class="thumbnail-classic-title"><a href="#">Ahmad Minezil </a></h5>
+                    <div class="thumbnail-classic-price">-</div>
+                    <h6 class="thumbnail-classic-title"><a href="#">Chief Financial Officer</a></h6>
+                  </div>
+                </div>
+              </article>
+            </div>
+            
+            <div class="col-sm-6 col-lg-4">
+              <!-- Thumbnail Classic-->
+              <article class="thumbnail-classic">
+                <div class="thumbnail-classic-figure"><img src="media/announcers/George Nehme - Founder - CEO.jpeg" alt="" width="370" height="315"/>
+                </div>
+                <div class="thumbnail-classic-caption">
+                  <div>
+                    <h5 class="thumbnail-classic-title"><a href="#">George Nehme </a></h5>
+                    <div class="thumbnail-classic-price">-</div>
+                    <h6 class="thumbnail-classic-title"><a href="#"> Founder - CEO</a></h6>
+                  </div>
+                </div>
+              </article>
+            </div>
+            
+            <div class="col-sm-6 col-lg-4">
+              <!-- Thumbnail Classic-->
+              <article class="thumbnail-classic">
+                <div class="thumbnail-classic-figure"><img src="media/announcers/Mohammed Ghazal - Project Engineer.jpeg" alt="" width="370" height="315"/>
+                </div>
+                <div class="thumbnail-classic-caption">
+                  <div>
+                    <h5 class="thumbnail-classic-title"><a href="#">Mohammed Ghazal </a></h5>
+                    <div class="thumbnail-classic-price">-</div>
+                    <h6 class="thumbnail-classic-title"><a href="#"> Project Engineer</a></h6>
+                  </div>
+                </div>
+              </article>
+            </div>
+            
+            <div class="col-sm-6 col-lg-4">
+              <!-- Thumbnail Classic-->
+              <article class="thumbnail-classic">
+                <div class="thumbnail-classic-figure"><img src="media/announcers/Monjed Mohammed - Projects Manager.jpeg" alt="" width="370" height="315"/>
+                </div>
+                <div class="thumbnail-classic-caption">
+                  <div>
+                    <h5 class="thumbnail-classic-title"><a href="#">Monjed Mohammed </a></h5>
+                    <div class="thumbnail-classic-price">-</div>
+                    <h6 class="thumbnail-classic-title"><a href="#">Projects Manager</a></h6>
+                  </div>
+                </div>
+              </article>
+            </div>
+            
+            <div class="col-sm-6 col-lg-4">
+              <!-- Thumbnail Classic-->
+              <article class="thumbnail-classic">
+                <div class="thumbnail-classic-figure"><img src="media/announcers/Muayad Al mishal - Executive Manager.jpeg" alt="" width="370" height="315"/>
+                </div>
+                <div class="thumbnail-classic-caption">
+                  <div>
+                    <h5 class="thumbnail-classic-title"><a href="#">Muayad Al mishal </a></h5>
+                    <div class="thumbnail-classic-price">-</div>
+                    <h6 class="thumbnail-classic-title"><a href="#">- Executive Manager</a></h6>
+                  </div>
+                </div>
+              </article>
+            </div>
+            
+            <div class="col-sm-6 col-lg-4">
+              <!-- Thumbnail Classic-->
+              <article class="thumbnail-classic">
+                <div class="thumbnail-classic-figure"><img src="media/announcers/Rawaa Mubark - Architectural.jpeg" alt="" width="370" height="315"/>
+                </div>
+                <div class="thumbnail-classic-caption">
+                  <div>
+                    <h5 class="thumbnail-classic-title"><a href="#">Rawaa Mubark</a></h5>
+                    <div class="thumbnail-classic-price">-</div>
+                    <h6 class="thumbnail-classic-title"><a href="#"> Architectural</a></h6>
+                  </div>
+                </div>
+              </article>
+            </div>
+            
+            <div class="col-sm-6 col-lg-4">
+              <!-- Thumbnail Classic-->
+              <article class="thumbnail-classic">
+                <div class="thumbnail-classic-figure"><img src="media/announcers/Rehab Magde - - Public Relations & Marketing Department.jpeg" alt="" width="370" height="315"/>
+                </div>
+                <div class="thumbnail-classic-caption">
+                  <div>
+                    <h5 class="thumbnail-classic-title"><a href="#">Rehab Magde</a></h5>
+                    <div class="thumbnail-classic-price">-</div>
+                    <h6 class="thumbnail-classic-title"><a href="#">Public Relations & Marketing Department</a></h6>
+                  </div>
+                </div>
+              </article>
+            </div>
+            
+            <div class="col-sm-6 col-lg-4">
+              <!-- Thumbnail Classic-->
+              <article class="thumbnail-classic">
+                <div class="thumbnail-classic-figure"><img src="media/announcers/Saieb Haddadin - Public Relations & Marketing Department.jpeg" alt="" width="370" height="315"/>
+                </div>
+                <div class="thumbnail-classic-caption">
+                  <div>
+                    <h5 class="thumbnail-classic-title"><a href="#">Saieb Haddadin</a></h5>
+                    <div class="thumbnail-classic-price">-</div>
+                    <h6 class="thumbnail-classic-title"><a href="#">Public Relations & Marketing Department</a></h6>
+                  </div>
+                </div>
+              </article>
+            </div>
+            
+            <div class="col-sm-6 col-lg-4">
+              <!-- Thumbnail Classic-->
+              <article class="thumbnail-classic">
+                <div class="thumbnail-classic-figure"><img src="media/announcers/Wafaa Ali - Office Administrator.jpeg" alt="" width="370" height="315"/>
+                </div>
+                <div class="thumbnail-classic-caption">
+                  <div>
+                    <h5 class="thumbnail-classic-title"><a href="#">Wafaa Ali</a></h5>
+                    <div class="thumbnail-classic-price">-</div>
+                    <h6 class="thumbnail-classic-title"><a href="#">Office Administrator</a></h6>
+                  </div>
+                </div>
+              </article>
+            </div>
+          
+            
+           
+          </div>
+        </div>
+      </section>
+
+<!-- Our Team-->
+<section class="section section-xxl text-sm-left bg-image-5 context-dark section-relative">
+  <div class="container">
+    <div class="row row-30 justify-content-center justify-content-sm-end">
+      <div class="col-12 d-sm-none"><img src="static/images/background/bg-image-7.jpg" alt="" width="1010" height="608"/>
+      </div>
+      <div class="col-sm-6 col-md-5">
+        <article class="box-info-beryl">
+          <h3 class="box-info-beryl-title wow fadeInRight">Are you looking For a First-Class Consultation?.</h2>
+          <div class="heading-2 text-primary box-info-beryl-time wow fadeInRight" data-wow-delay=".1s">
+            
+            <time datetime="2020-05-05"></time>
+            
+            
+          </div>
+          <p class="box-info-beryl-text wow fadeInRight" data-wow-delay=".2s"></p>
+          <!-- <a class="button button-white button-zakaria wow fadeInUp" href="#">buy tickets</a> -->
+        </article>
+      </div>
+    </div>
+  </div>
+  
+  <div class="bg-image bg-image-7" style="background-image: url(media/A1-004.jpg);"></div>
+  <div class="bg-image-6"></div>
+  
+  
+</section>
+
+
+      <!-- Section-->
+<!-- Get in touch-->
+      <!-- Get in touch-->
+       <!-- <section class="section section-xl bg-default text-md-left" id="message">
+        <div class="container">
+          <div class="title-classic">
+            <h3 class="title-classic-title">Send us a message</h3>
+            <p class="title-classic-subtitle">send a live message and we will reply right away<br class="d-none d-lg-block">we will reply on air</p>
+          </div>
+          
+          <form class="rd-form rd-mailform" data-form-output="form-output-global" data-form-type="contact" 
+          method="POST">
+          <input type="hidden" name="csrfmiddlewaretoken" value="yXn291OP0p5VarFE8HI8OJY1k6xFIAZ0JlGDz3h4ffpGddRfihnbgYn5wgMz7eNR">
+            <div class="row row-20 row-md-30">
+              <div class="col-lg-8">
+                <div class="row row-20 row-md-30">
+                  <div class="col-sm-6">
+                    <div class="form-wrap">
+                      <input class="form-input" id="contact-first-name-2" type="text" name="name" data-constraints="@Required"/>
+                      <label class="form-label" for="contact-first-name-2">Name</label>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-wrap">
+                      <input class="form-input" id="contact-phone-2" type="text" name="phone" data-constraints="@Numeric"/>
+                      <label class="form-label" for="contact-phone-2">Phone</label>
+                    </div>
+                  </div>  
+                  <div class="col-sm-6">
+                    <div class="form-wrap">
+                      <input class="form-input" id="contact-last-name-2" type="text" name="country" data-constraints="@Required"/>
+                      <label class="form-label" for="contact-last-name-2">Location</label>
+                    </div>
+                  </div>
+                  
+                  <div class="col-sm-6">
+                    <div class="form-wrap">
+                      <input class="form-input" id="contact-last-name-2" type="text" name="program" data-constraints="@Required" value="Top Negm"  style="display: none"/>
+                    </div>
+                    
+                  
+                  </div>
+
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="form-wrap">
+                  <label class="form-label" for="contact-message-2">Message</label>
+                  <textarea class="form-input textarea-lg" id="contact-message-2" name="message" data-constraints="@Required"></textarea>
+                </div>
+              </div>
+            </div>
+            <button class="button button-lg button-primary button-zakaria" type="submit">Send Message</button>
+          </form>
+        </div>
+      </section> -->
+
+      <!-- Get in touch-->
+
+
+
+
+
+
+      <!-- Get in touch-->
+
+      <!-- About Us-->
+      <section class="section section-xxl text-left context-dark bg-gray-13 bg-image bg-image-4" style="background-image: url(static/images/background/George.jpeg);"  id="about">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-8 col-md-7 col-lg-6 box-about">
+              <h4 class="title-style-9 wow fadeInRight">A WORD  <span>FROM</span> George Nehme | Founder And CEO</h2>
+              <p class="wow fadeInRight" data-wow-delay=".1s">AWe pride ourselves on being totally cost worthy are reliably on top of safety and development trends, which help keep ahead of the competitor and a leader in our field.</p>
+              <p class="wow fadeInRight" data-wow-delay=".2s">We aim to achieve the highest quality interiors, and to comply with agreed time schedule and budget. We create truly architecture by blending classical and contemporary designs. We believe that interior designing is a synthesis of an artistic expression and practical basis in an efficient and financial sense.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+     
+
+      
+
+      <section class="section section-xxl " id="gallery">
+        <div class="container">
+          <h2 class="wow fadeScale">Tour Gallery</h2>
+          <div class="isotope-wrap">
+            <div class="row row-30 isotope isotope-custom-1" data-lightgallery="group">
+              <div class="col-sm-6 col-lg-4 col-xl-3 isotope-item" data-filter="Type 1">
+                <article class="thumbnail-classic">
+                  <div class="thumbnail-classic-figure"><img src="static/images/Gallery/A1-001.jpg" alt="" width="270" height="250"/>
+                  </div>
+                  <div class="thumbnail-classic-caption">
+                    <div>
+                    
+                      <div class="thumbnail-classic-button-wrap">
+                        <div class="thumbnail-classic-button"><a class="button button-white fl-bigmug-line-search74" href="static/images/Gallery/A1-001.jpg" data-lightgallery="item">
+                          <img src="static/images/Gallery/A1-001.jpg" alt="" width="270" height="250"/></a></div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="col-sm-6 col-lg-4 col-xl-3 isotope-item" data-filter="Type 2">
+                <article class="thumbnail-classic">
+                  <div class="thumbnail-classic-figure"><img src="static/images/Gallery/A1-0012.jpg" alt="" width="270" height="530"/>
+                  </div>
+                  <div class="thumbnail-classic-caption">
+                    <div>
+                 
+                      <div class="thumbnail-classic-button-wrap">
+                        <div class="thumbnail-classic-button"><a class="button button-white fl-bigmug-line-search74" href="static/images/Gallery/A1-0012.jpg" data-lightgallery="item">
+                          <img src="static/images/Gallery/A1-0012.jpg" alt="" width="270" height="530"/></a></div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="col-sm-6 col-lg-4 col-xl-3 isotope-item" data-filter="Type 1">
+                <article class="thumbnail-classic">
+                  <div class="thumbnail-classic-figure"><img src="static/images/Gallery/A1-003.jpg" alt="" width="270" height="250"/>
+                  </div>
+                  <div class="thumbnail-classic-caption">
+                    <div>
+                 
+                      <div class="thumbnail-classic-button-wrap">
+                        <div class="thumbnail-classic-button"><a class="button button-white fl-bigmug-line-search74" href="static/images/Gallery/A1-003.jpg" data-lightgallery="item">
+                          <img src="static/images/Gallery/A1-003.jpg" alt="" width="270" height="250"/></a></div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="col-sm-6 col-lg-4 col-xl-3 isotope-item" data-filter="Type 2">
+                <article class="thumbnail-classic">
+                  <div class="thumbnail-classic-figure"><img src="static/images/Gallery/A1-004.jpg" alt="" width="270" height="250"/>
+                  </div>
+                  <div class="thumbnail-classic-caption">
+                    <div>
+                     
+                      <div class="thumbnail-classic-button-wrap">
+                        <div class="thumbnail-classic-button"><a class="button button-white fl-bigmug-line-search74" href="static/images/Gallery/A1-004.jpg" data-lightgallery="item">
+                          <img src="static/images/Gallery/A1-004.jpg" alt="" width="270" height="250"/></a></div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="col-sm-6 col-lg-4 col-xl-3 isotope-item" data-filter="Type 1">
+                <!-- Thumbnail Classic-->
+                <article class="thumbnail-classic">
+                  <div class="thumbnail-classic-figure"><img src="static/images/Gallery/A1-005.jpg" alt="" width="270" height="250"/>
+                  </div>
+                  <div class="thumbnail-classic-caption">
+                    <div>
+                   
+                      <div class="thumbnail-classic-button-wrap">
+                        <div class="thumbnail-classic-button"><a class="button button-white fl-bigmug-line-search74" href="static/images/Gallery/A1-005.jpg" data-lightgallery="item">
+                          <img src="static/images/Gallery/A1-005.jpg" alt="" width="270" height="250"/></a></div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+
+              <div class="col-sm-6 col-lg-4 col-xl-3 isotope-item" data-filter="Type 1">
+                <article class="thumbnail-classic">
+                  <div class="thumbnail-classic-figure"><img src="static/images/Gallery/A1-006.jpg" alt="" width="270" height="250"/>
+                  </div>
+                  <div class="thumbnail-classic-caption">
+                    <div>
+                  
+                      <div class="thumbnail-classic-button-wrap">
+                        <div class="thumbnail-classic-button"><a class="button button-white fl-bigmug-line-search74" href="static/images/Gallery/A1-006.jpg" data-lightgallery="item">
+                          <img src="static/images/Gallery/A1-006.jpg" alt="" width="270" height="250"/></a></div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+
+              <div class="col-sm-6 col-lg-4 col-xl-3 isotope-item" data-filter="Type 1">
+                <!-- Thumbnail Classic-->
+                <article class="thumbnail-classic">
+                  <div class="thumbnail-classic-figure"><img src="static/images/Gallery/A1-008.jpg" alt="" width="270" height="250"/>
+                  </div>
+                  <div class="thumbnail-classic-caption">
+                    <div>
+                      <!-- <h5 class="thumbnail-classic-title"><a href="#">Resistance Festival</a></h5> -->
+                      <!-- <div class="thumbnail-classic-price">January 2020</div> -->
+                      <div class="thumbnail-classic-button-wrap">
+                        <div class="thumbnail-classic-button"><a class="button button-white fl-bigmug-line-search74" href="static/images/Gallery/A1-008.jpg" data-lightgallery="item">
+                          <img src="static/images/Gallery/A1-008.jpg" alt="" width="270" height="250"/></a></div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+
+       
+ 
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured Events-->
+      <section class="section section-xxl bg-dark context-dark" id="today">
+        <div class="container">
+          <h2>Our Professional Services
+          </h2>
+          <!-- Swiper-->
+          <div class="swiper-container swiper-slider swiper-slider-custom swiper-slider-5 swiper-scrollbar-1" data-autoplay="5000" data-margin="40" data-slides="auto" data-direction="vertical" data-simulate-touch="true" data-mousewheel="true">
+            <div class="swiper-wrapper">
+             
+              <!-- Product-->
+              <div class="swiper-slide">
+                <article class="event-classic">
+                  <div class="unit unit-spacing-0 flex-column flex-sm-row align-items-sm-center">
+                    <div class="unit-left align-self-stretch"><a class="event-classic-figure" href="#">
+                      <img class="event-classic-image" src="media/services1.png" alt="" width="385" height="392"/></a></div>
+                    <div class="unit-body flex-grow-1">
+                      <div class="event-classic-body">
+                        <div class="unit unit-spacing-sm flex-column flex-md-row-reverse justify-content-md-between">
+                          <div class="unit-left">
+                           
+                          </div>
+                          <div class="unit-body">
+                            <h3 class="event-classic-title"><a href="#">Residintial design</a></h3>
+                           
+                            <p class="event-classic-text">our home is arguably the most important building you inhabit. It is where you live your life. It is where you raise your children, your pets and your plants. It is the place of comfort you return to at the end of the day. It is a repository of memories and the generator of dreams.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              
+              <!-- Product-->
+              <div class="swiper-slide">
+                <article class="event-classic">
+                  <div class="unit unit-spacing-0 flex-column flex-sm-row align-items-sm-center">
+                    <div class="unit-left align-self-stretch"><a class="event-classic-figure" href="#">
+                      <img class="event-classic-image" src="media/services2.png" alt="" width="385" height="392"/></a></div>
+                    <div class="unit-body flex-grow-1">
+                      <div class="event-classic-body">
+                        <div class="unit unit-spacing-sm flex-column flex-md-row-reverse justify-content-md-between">
+                          <div class="unit-left">
+                           
+                          </div>
+                          <div class="unit-body">
+                            <h3 class="event-classic-title"><a href="#">Hotel Design</a></h3>
+                           
+                            <p class="event-classic-text">we make your hotel or motel feel more like a home to the guest we can decorate as well as reinnovate .</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              
+              <!-- Product-->
+              <div class="swiper-slide">
+                <article class="event-classic">
+                  <div class="unit unit-spacing-0 flex-column flex-sm-row align-items-sm-center">
+                    <div class="unit-left align-self-stretch"><a class="event-classic-figure" href="#">
+                      <img class="event-classic-image" src="media/services3.png" alt="" width="385" height="392"/></a></div>
+                    <div class="unit-body flex-grow-1">
+                      <div class="event-classic-body">
+                        <div class="unit unit-spacing-sm flex-column flex-md-row-reverse justify-content-md-between">
+                          <div class="unit-left">
+                           
+                          </div>
+                          <div class="unit-body">
+                            <h3 class="event-classic-title"><a href="#">Office Design</a></h3>
+                           
+                            <p class="event-classic-text">A good office is very important for productivity and also serves as a good image for the company  .</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              
+              <!-- Product-->
+              <div class="swiper-slide">
+                <article class="event-classic">
+                  <div class="unit unit-spacing-0 flex-column flex-sm-row align-items-sm-center">
+                    <div class="unit-left align-self-stretch"><a class="event-classic-figure" href="#">
+                      <img class="event-classic-image" src="media/services4.png" alt="" width="385" height="392"/></a></div>
+                    <div class="unit-body flex-grow-1">
+                      <div class="event-classic-body">
+                        <div class="unit unit-spacing-sm flex-column flex-md-row-reverse justify-content-md-between">
+                          <div class="unit-left">
+                           
+                          </div>
+                          <div class="unit-body">
+                            <h3 class="event-classic-title"><a href="#">Lighting </a></h3>
+                           
+                            <p class="event-classic-text">The lighting in your home affectshow you feel. It’s more than just a practical convenience, so the more control you have over your lights, the better. With a few different light sources, you can easily change the mood to suit whatever you’re doing in any living space. From creating a romantic atmosphere to chopping carrots, and everything in between  .</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              
+              <!-- Product-->
+              <div class="swiper-slide">
+                <article class="event-classic">
+                  <div class="unit unit-spacing-0 flex-column flex-sm-row align-items-sm-center">
+                    <div class="unit-left align-self-stretch"><a class="event-classic-figure" href="#">
+                      <img class="event-classic-image" src="media/services5.jpg" alt="" width="385" height="392"/></a></div>
+                    <div class="unit-body flex-grow-1">
+                      <div class="event-classic-body">
+                        <div class="unit unit-spacing-sm flex-column flex-md-row-reverse justify-content-md-between">
+                          <div class="unit-left">
+                           
+                          </div>
+                          <div class="unit-body">
+                            <h3 class="event-classic-title"><a href="#">Smart Home solutions  </a></h3>
+                           
+                            <p class="event-classic-text">Improve your smart life experience, provide complete systems including audio visual, lighting control, home automa- tion and smart security, etc...</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              
+
+              <div class="swiper-slide swiper-slide-last"></div>
+            </div>
+            <!-- Siwper Scrollbar-->
+            <div class="swiper-scrollbar"></div>
+          </div>
+     
+        </div>
+      </section>
+      <!-- blog -->
+      <section class="section section-xl " id = "blog">
+        <div class="container">
+          <div class="row row-30">
+            
+            <div class="col-sm-6 col-lg-12">
+              <!-- Post Classic-->
+              <div class="embed-responsive embed-responsive-21by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/h7Fhmw9MqgY?start=105" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+        </div>
+            </div>
+          
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-xxl " id="shows">
+        <div class="container">
+          <h2 class="wow fadeScale">Our Most Recent Projects </h2>
+          <div class="row row-lg row-30 row-lg-50">
+              <!-- Product-->
+           
+                <div class="col-sm-6 col-md-6 col-lg-6 hov">
+              <!-- Product-->
+              <article class="product wow fadeInRight">
+                <div class="product-body">
+                  <div class="product-figure">
+                    <img src="media/home_blog1.jpg" alt="" width="800" height="260"/>
+                  </div>
+                  <h5 class="product-title"><a href="single-product.html">EZ willness center outer finishing</a></h5>
+                  <div class="product-price-wrap">
+                   
+                  </div>
+                </div>
+
+              </article>
+                      
+            </div>
+            
+            <div class="col-sm-6 col-md-6 col-lg-6 hov">
+              <!-- Product-->
+              <article class="product wow fadeInRight">
+                <div class="product-body">
+                  <div class="product-figure">
+                    <img src="media/home_blog2.jpg" alt="" width="800" height="260"/>
+                  </div>
+                  <h5 class="product-title"><a href="single-product.html">Our team reviweing the blueprints</a></h5>
+                  <div class="product-price-wrap">
+                   
+                  </div>
+                </div>
+
+              </article>
+                      
+            </div>
+
+          </div>
+        </div>
+      </section>
+      <!-- Page Footer-->
+      <footer class="section footer-creative footer-creative-2"  id="footer">
+        <div class="footer-classic-body section-xl context-dark" >
+          <div class="container">
+            <div class="row row-40 row-md-50 justify-content-sm-between">
+              <div class="col-lg-5 wow fadeInRight">
+                <div class="inset-xl-right-55">
+                  <h4 class="footer-creative-title">About us</h4>
+                  <p>Grabbing the concsumer’s attention isn’t enough you have to keep that attention for at least a..</p>
+                  <br>
+                  <h4 class="footer-creative-title">Working hours</h4>
+                  <p>Every day from 08:00 to 17:00 except Friday</p>
+                  <!-- <div class="group-sm group-middle">
+                    <a class="button button-shadow-2 button-gray-800 button-zakaria" href="grid-fullwidth-gallery.html">View albums</a><a class="button button-shadow-2 button-white button-zakaria" href="grid-blog.html">View events</a></div> -->
+                </div>
+              </div>
+              <div class="col-sm-6 col-lg-3 wow fadeInRight" data-wow-delay=".1s">
+                <h4 class="footer-creative-title">Contacts</h4>
+                <ul class="contacts-holly">
+                  <li>
+                    <div class="contacts-holly-title">Phone</div>
+                    <div class="contacts-holly-text"><a href="tel:#">+971 52282 0910<br>
+                      +971 43999 529
+                    </a></div>
+                  </li>
+                  <li>
+                    <div class="contacts-holly-title">E-mail</div>
+                    <div class="contacts-holly-text"><a href="mailto:#">info@gcvision-interiors.net</a></div>
+                  </li>
+                  <li>
+                    <div class="contacts-holly-title">Address</div>
+                    <div class="contacts-holly-text"><p >Office 3304, Jumeirah Bay X3, JLT Cluster X Jumeirah Lakes Towers - Dubai</p></div>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-sm-5 col-lg-2 wow fadeInRight" data-wow-delay=".2s">
+                <h4 class="footer-creative-title">Menu</h4>
+
+                <ul class="footer-creative-list">
+                  <li class="rd-nav-item "><a class="rd-nav-link" href="#home">Home</a></li>
+                  <li class="rd-nav-item "><a class="rd-nav-link" href="#about">about</a></li>
+                  <li class="rd-nav-item"><a class="rd-nav-link" href="#blog">News</a></li>
+                  <!-- <li class="rd-nav-item"><a class="rd-nav-link" href="discography.html">Videos</a></li> -->
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-sm-5 col-lg-12 wow fadeInRight" data-wow-delay=".2s">
+              <div class="embed-responsive embed-responsive-21by9">
+                <div class="gmap_canvas">
+                  <iframe class="embed-responsive-item"  id="gmap_canvas" src="https://maps.google.com/maps?q=%20Jumeirah%20Bay%20X3%2C%20JLT%20Cluster%20X%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Jumeirah%20Lakes%20Towers%20-%20Dubai&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                </div></div></div>
+              </div>
+            </div>
+           
+            <div class="container">
+              <div class="title-classic">
+                <h3 class="title-classic-title">Send us a message</h3>
+                <p class="title-classic-subtitle">send a live message and we will reply right away<br class="d-none d-lg-block">we will reply on air</p>
+              </div>
+              
+              <form class="rd-form rd-mailform" data-form-output="form-output-global" data-form-type="contact" 
+              method="POST">
+              <input type="hidden" name="csrfmiddlewaretoken" value="yXn291OP0p5VarFE8HI8OJY1k6xFIAZ0JlGDz3h4ffpGddRfihnbgYn5wgMz7eNR">
+                <div class="row row-20 row-md-30">
+                  <div class="col-lg-8">
+                    <div class="row row-20 row-md-30">
+                      <div class="col-sm-6">
+                        <div class="form-wrap">
+                          <input class="form-input" id="contact-first-name-2" type="text" name="name" data-constraints="@Required"/>
+                          <label class="form-label" for="contact-first-name-2">Name</label>
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="form-wrap">
+                          <input class="form-input" id="contact-phone-2" type="text" name="phone" data-constraints="@Numeric"/>
+                          <label class="form-label" for="contact-phone-2">Phone</label>
+                        </div>
+                      </div>  
+                      <div class="col-sm-6">
+                        <div class="form-wrap">
+                          <input class="form-input" id="contact-last-name-2" type="text" name="country" data-constraints="@Required"/>
+                          <label class="form-label" for="contact-last-name-2">Location</label>
+                        </div>
+                      </div>
+                      
+                      <div class="col-sm-6">
+                        <div class="form-wrap">
+                          <input class="form-input" id="contact-last-name-2" type="text" name="program" data-constraints="@Required" value="Top Negm"  style="display: none"/>
+                          <!-- <label class="form-label" for="contact-last-name-2">Program</label> -->
+                        </div>
+                        
+                      
+                      </div>
+    
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="form-wrap">
+                      <label class="form-label" for="contact-message-2">Message</label>
+                      <textarea class="form-input textarea-lg" id="contact-message-2" name="message" data-constraints="@Required"></textarea>
+                    </div>
+                  </div>
+                </div>
+                <button class="button button-lg button-primary button-zakaria mb-5" type="submit">Send Message</button>
+              </form>
+            </div>
+          
+        <div class="footer-creative-panel">
+          <div class="container">
+            <div class="row row-10 align-items-center justify-content-sm-between">
+              <div class="col-sm-auto">
+                <p class="rights"><span>&copy;&nbsp;
+                   </span><span class="copyright-year"></span><span>&nbsp;</span><span>GC-VISION</span><span>.&nbsp; 
+                     All rights reserved.</span><span>&nbsp;</span><a href="privacy-policy.html">Privacy Policy</a>.</p>
+              </div>
+              <div class="col-sm-auto">
+                <ul class="list-inline list-social list-inline-sm">
+                  <li class="list-inline-item"><a class="fab fa-facebook" href="https://www.facebook.com/george.nehme.754"></a></li>
+                  <li class="list-inline-item"><a class="fab fa-instagram" href="https://www.instagram.com/leader_george/"></a></li>
+
+                  
+                  <!-- <li class="list-inline-item"><a class="fab fa-youtube-play" href="#"></a></li> -->
+                </ul>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        
+      </footer>
+    </div>
+
+   
+
+    <div class="snackbars" id="form-output-global"></div>
+    <script type="text/javascript" src="static/js/core.min.js"></script>
+    <script type="text/javascript" src="static/js/script.js"></script>
+
+
+  </body>
+
+</html>
